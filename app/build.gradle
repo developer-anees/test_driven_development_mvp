@@ -26,5 +26,10 @@ dependencies {
     testImplementation 'org.mockito:mockito-core:2.28.2'
 
     androidTestImplementation 'androidx.test:runner:1.2.0'
-//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // Room database
+    def room_version = "2.2.0-alpha02" // 2.1.0 for latest stable version
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
 }

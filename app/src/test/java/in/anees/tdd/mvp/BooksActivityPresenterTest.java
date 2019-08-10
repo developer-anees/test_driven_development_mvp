@@ -67,7 +67,7 @@ public class BooksActivityPresenterTest {
         @Override
         public List<Book> getBooks() {
             if (mReturnSomeBooks) {
-                return Arrays.asList(new Book(), new Book(), new Book());
+                return Arrays.asList(new Book(1L , "asd"), new Book(2L,"asdad"), new Book(3L,"sdgrs"));
             } else {
                 return Collections.emptyList();
             }

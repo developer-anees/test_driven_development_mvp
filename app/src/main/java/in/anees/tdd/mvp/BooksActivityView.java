@@ -11,4 +11,5 @@ public interface BooksActivityView {
 
     void displayBooks(List<Book> bookList);
     void displayNoBooksFound();
+    void displayError();
 }

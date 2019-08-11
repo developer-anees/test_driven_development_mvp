@@ -4,9 +4,11 @@ import android.content.Context;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 import in.anees.tdd.mvp.repositories.BooksRepository;
 import in.anees.tdd.mvp.repositories.model.Book;
-import in.anees.tdd.mvp.room_database.BooksDatabase;
+import in.anees.tdd.mvp.roomdatabase.BooksDatabase;
 
 import io.reactivex.Single;
 
@@ -17,6 +19,7 @@ public class DatabaseBooksRepository implements BooksRepository {
 
     private BooksDatabase mBooksDatabase;
 
+    @Inject
     public DatabaseBooksRepository(Context context) {
         mBooksDatabase = BooksDatabase.getInstance(context);
     }

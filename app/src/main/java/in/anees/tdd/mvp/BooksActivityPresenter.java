@@ -2,16 +2,19 @@ package in.anees.tdd.mvp;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 import in.anees.tdd.mvp.repositories.BooksRepository;
 import in.anees.tdd.mvp.repositories.model.Book;
 import in.anees.tdd.mvp.rx.scheduler.SchedulerProvider;
+
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.observers.DisposableSingleObserver;
 
 /**
  * Created by Anees Thyrantakath on 2019-08-09.
  */
-class BooksActivityPresenter {
+public class BooksActivityPresenter {
 
     private BooksActivityView mBooksActivityView;
     private BooksRepository mBooksRepository;
@@ -19,6 +22,7 @@ class BooksActivityPresenter {
     private CompositeDisposable mCompositeDisposable;
     private SchedulerProvider mSchedulerProvider;
 
+    @Inject
     public BooksActivityPresenter(BooksActivityView booksActivityView,
                                   BooksRepository booksRepository, SchedulerProvider schedulerProvider) {
         mCompositeDisposable = new CompositeDisposable();

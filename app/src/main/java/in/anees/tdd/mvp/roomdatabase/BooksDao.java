@@ -1,4 +1,4 @@
-package in.anees.tdd.mvp.room_database;
+package in.anees.tdd.mvp.roomdatabase;
 
 import androidx.room.Dao;
 import androidx.room.Delete;

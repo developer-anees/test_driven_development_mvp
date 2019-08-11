@@ -1,4 +1,4 @@
-package in.anees.tdd.mvp.room_database;
+package in.anees.tdd.mvp.roomdatabase;
 
 import android.content.Context;
 
@@ -10,6 +10,8 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.inject.Singleton;
 
 import in.anees.tdd.mvp.repositories.model.Book;
 

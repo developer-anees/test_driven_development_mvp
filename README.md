@@ -7,5 +7,13 @@ implementing any view related stuff live populating recyclerview etc.
 - Notice the test code, I'm **continuously modifying test code based on the requirement**.
 - **MVP architecture** to fetch data from database.
 - **Room database** for storing and retrieving the data.
-- Introduced **RxJava/RxAndroid** for doing operation on background thread.
-- Introduced **retrolambda** to optimize code.
+- Added **RxJava/RxAndroid** for doing operation on background thread.
+- Added **retrolambda** to optimize code.
+- Introduced **Dagger2** to code base.
+
+Note: Check each commits in this repository, it will be helpful if you are referring this code for
+learning purpose.
+
+Feel free to use this code and play with it, let me know if I can make any further improvements.
+
+Thank you!😊🙏
